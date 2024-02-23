@@ -42,3 +42,10 @@ class Models:
             return model.input_rate
         else:
             return None
+
+    def getOutputRate(self, model_name):
+        model = self.get_model(model_name)
+        if model:
+            return model.output_rate
+        else:
+            return None
